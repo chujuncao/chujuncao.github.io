@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Well-Faceted Coffee Shop — Case Study · Chujun Cao</title>
+  <meta name="description" content="Case study: restructuring an over-faceted coffee shop's navigation using IA heuristics, two competing IA models, and usability testing." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%23E8744F'/%3E%3Ctext x='50' y='68' font-family='Georgia,serif' font-size='54' fill='white' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== 导航栏 ===================== -->
+  <header class="nav" id="top">
+    <a class="nav__logo" href="index.html">Chujun&nbsp;Cao</a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="index.html#work">Work</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===================== CASE STUDY HERO ===================== -->
+    <section class="case-hero reveal">
+      <a class="back-link" href="index.html#work">← Back to work</a>
+      <p class="eyebrow"><span class="dot" aria-hidden="true"></span>INFORMATION ARCHITECTURE — INDIVIDUAL PROJECT (INF2170)</p>
+      <h1 class="case-hero__title">The Well-Faceted Coffee Shop</h1>
+      <p class="case-hero__hook">Your friends built a coffee storefront with every possible filter. It's a wonderland. It's also unusable.</p>
+      <div class="case-hero__meta">
+        <div><span class="meta-label">Role</span><p>Individual — research, IA, and testing</p></div>
+        <div><span class="meta-label">Method</span><p>Heuristic evaluation, discount usability test</p></div>
+        <div><span class="meta-label">Deliverables</span><p>Facet decisions, 2 IA models, test results</p></div>
+      </div>
+    </section>
+
+    <!-- ===================== OVERVIEW ===================== -->
+    <section class="case-block reveal">
+      <div class="case-grid">
+        <div class="case-col">
+          <p class="case-kicker">PROBLEM</p>
+          <p>A coffee storefront tried to filter by every attribute it could measure —
+          cultivar, processing, origin, flavor notes, acidity, two brewing-method fields,
+          even altitude buckets. The result was technically complete and practically
+          unusable: a facet panel nobody could scan.</p>
+        </div>
+        <div class="case-col">
+          <p class="case-kicker">SOLUTION</p>
+          <p>I evaluated every facet against real-world data conditions — not the tidy
+          class dataset — then designed two different, equally valid ways to browse the
+          same catalog: one organized by region, one by flavor.</p>
+        </div>
+        <div class="case-col">
+          <p class="case-kicker">MY ROLE</p>
+          <p>Solo project. The competitive scan, both IA structures, and a discount
+          usability test with 3 participants are all my own work, start to finish.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== COMPETITIVE SCAN & FACET DECISIONS ===================== -->
+    <section class="case-block reveal">
+      <h2 class="case-h2">What real coffee shops actually facet</h2>
+      <p class="case-lead">
+        I scanned four specialty-coffee retailers (Intelligentsia, Blue Bottle, Onyx Coffee
+        Lab, Stumptown) and scored every candidate facet against four heuristics —
+        Popularity, Coverage, Utility, and UI Fit — using real-world data conditions rather
+        than the class dataset's artificially complete records.
+      </p>
+      <ul class="insight-list">
+        <li><strong>Real shops keep it small.</strong> Most rely on a short, edited list —
+        Region, Roast Level, Processing Method, sometimes a high-level Flavor Category.
+        Richer fields like Cultivar or Acidity live in product descriptions, but are almost
+        never used as filters.</li>
+        <li><strong>Coverage in theory ≠ coverage in practice.</strong> Fields like Origin,
+        Roast, and Processing Method are standardized and reliably filled in. Flavor
+        Profile, Cultivar, and Harvest Year are frequently missing or inconsistent — and
+        would degrade the experience as the catalog grows.</li>
+        <li><strong>Price is everywhere, but never a facet.</strong> Every site let you sort
+        by price, but none faceted it. I kept a simple price-range facet anyway — it
+        supports a basic purchasing need without adding UI clutter.</li>
+      </ul>
+      <p class="ia-rationale" style="margin-top:20px">
+        <strong style="color:var(--dark)">Three recommendations</strong> came out of this
+        scan: merge scattered flavor-note fields into standardized flavor families,
+        standardize brewing-method labels into one controlled vocabulary, and make Region a
+        navigation anchor while keeping Origin on product pages to avoid redundancy.
+      </p>
+    </section>
+
+    <!-- ===================== TWO IA MODELS ===================== -->
+    <section class="case-block reveal">
+      <h2 class="case-h2">Two ways to browse the same catalog</h2>
+      <p class="case-lead">Rather than pick one "correct" structure, I designed two — to compare how differently the same data can be organized.</p>
+
+      <div class="ia-compare">
+        <div class="ia-card">
+          <p class="ia-card__tag">PRIMARY IA</p>
+          <p class="ia-card__title">Region-first</p>
+          <div class="ia-card__facets">
+            <span class="facet-pill">Region</span><span class="facet-pill">Roast Level</span><span class="facet-pill">Processing Method</span><span class="facet-pill">Brew Method</span><span class="facet-pill">Price</span>
+          </div>
+          <div class="nav-tree">
+            <div>
+              <p class="nav-branch__label">By Region</p>
+              <div class="nav-branch__items">
+                <span class="nav-chip">Africa</span><span class="nav-chip">Central America</span><span class="nav-chip">South America</span><span class="nav-chip">Asia-Pacific</span><span class="nav-chip">North America</span><span class="nav-chip">Other</span>
+              </div>
+            </div>
+            <div>
+              <p class="nav-branch__label">By Processing</p>
+              <div class="nav-branch__items">
+                <span class="nav-chip">Washed</span><span class="nav-chip">Natural</span><span class="nav-chip">Honey / Other</span><span class="nav-chip">Decaf</span>
+              </div>
+            </div>
+            <div>
+              <p class="nav-branch__label">By Roast</p>
+              <div class="nav-branch__items">
+                <span class="nav-chip">Light</span><span class="nav-chip">Medium</span><span class="nav-chip">Dark</span>
+              </div>
+            </div>
+          </div>
+          <p class="ia-rationale">Five core facets reflecting the strongest competitor
+          patterns, kept minimal and scannable for mobile. Flavor and Cultivar were cut here
+          — low real-world coverage would have cluttered the panel.</p>
+        </div>
+
+        <div class="ia-card ia-card--alt">
+          <p class="ia-card__tag">ALTERNATIVE IA</p>
+          <p class="ia-card__title">Flavor-first</p>
+          <div class="ia-card__facets">
+            <span class="facet-pill">Flavor Vibes</span><span class="facet-pill">Tiny Flavor Notes</span><span class="facet-pill">Roast Level</span><span class="facet-pill">Processing Method</span><span class="facet-pill">Price</span>
+          </div>
+          <div class="nav-tree">
+            <div>
+              <p class="nav-branch__label">Flavor Vibes</p>
+              <div class="nav-branch__items">
+                <span class="nav-chip">Fruity</span><span class="nav-chip">Floral</span><span class="nav-chip">Nutty</span><span class="nav-chip">Chocolatey</span><span class="nav-chip">Citrus</span><span class="nav-chip">Caramel / Sweet</span><span class="nav-chip">Spice</span><span class="nav-chip">Earthy</span><span class="nav-chip">Wildcard</span>
+              </div>
+            </div>
+            <div>
+              <p class="nav-branch__label">Process Adventures</p>
+              <div class="nav-branch__items">
+                <span class="nav-chip">Washed (Clean)</span><span class="nav-chip">Natural (Fruity Bombs)</span><span class="nav-chip">Honey / Wild Ones</span>
+              </div>
+            </div>
+            <div>
+              <p class="nav-branch__label">Explore by Roast</p>
+              <div class="nav-branch__items">
+                <span class="nav-chip">Light Roast Lovers</span><span class="nav-chip">Medium Roast Lovers</span><span class="nav-chip">Dark Roast Lovers</span>
+              </div>
+            </div>
+          </div>
+          <p class="ia-rationale">Many people choose coffee by anticipated taste, not
+          geography — so Region and Origin are hidden entirely. Flavor Category becomes the
+          entry point, renamed "Flavor Vibes" for a more sensory browsing feel.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== USABILITY TESTING ===================== -->
+    <section class="case-block reveal">
+      <h2 class="case-h2">Testing the flavor-first model</h2>
+      <p class="case-lead">
+        A 5-minute discount usability test with 3 participants of varying coffee-buying
+        experience, each completing two findability tasks on the flavor-first IA.
+      </p>
+
+      <div class="test-row">
+        <div class="test-card">
+          <p class="test-card__name">P1 <span>· no prior experience</span></p>
+          <div class="test-time">
+            <div><strong>33s</strong><em>TASK 1</em></div>
+            <div><strong>42s</strong><em>TASK 2</em></div>
+          </div>
+          <p class="test-note">Selected Berry, Blackberry, and Blueberry instead of
+          Fruity — treating sub-notes as the category. Later spotted "Chocolate" duplicated
+          across both facet levels and had to manually undo a double filter.</p>
+        </div>
+        <div class="test-card">
+          <p class="test-card__name">P2 <span>· rare experience</span></p>
+          <div class="test-time">
+            <div><strong>30s</strong><em>TASK 1</em></div>
+            <div><strong>32s</strong><em>TASK 2</em></div>
+          </div>
+          <p class="test-note">Hesitated and nearly selected "Berry" before correcting to
+          "Fruity." Task 2 went smoothly using Flavor Vibes and Roast filters together.</p>
+        </div>
+        <div class="test-card">
+          <p class="test-card__name">P3 <span>· frequent buyer</span></p>
+          <div class="test-time">
+            <div><strong>27s</strong><em>TASK 1</em></div>
+            <div><strong>33s</strong><em>TASK 2</em></div>
+          </div>
+          <p class="test-note">Selected Fruity immediately and explicitly ignored "Tiny
+          Flavor Notes," calling it too narrow for a first pass. Fastest of the three.</p>
+        </div>
+      </div>
+
+      <ul class="insight-list" style="margin-top:24px">
+        <li><strong>The category/sub-category hierarchy wasn't clear.</strong> Two of
+        three participants treated flavor notes and flavor categories as interchangeable,
+        and one had to manually resolve a duplicate selection across levels.</li>
+        <li><strong>Expertise changes what "clear" means.</strong> The frequent buyer moved
+        fastest by deliberately ignoring the detail layer — flavor-first favored people who
+        already knew what they wanted more than first-time browsers.</li>
+      </ul>
+    </section>
+
+    <!-- ===================== WHAT'S NEXT ===================== -->
+    <section class="case-block reveal">
+      <h2 class="case-h2">What I'd test next</h2>
+      <p class="case-lead">
+        A comparative tree test between the flavor-first and region-first structures would
+        show which model actually performs better for which kind of shopper — a beginner
+        versus an experienced buyer — rather than assuming one structure fits everyone.
+      </p>
+    </section>
+
+    <!-- ===================== MY CONTRIBUTION ===================== -->
+    <section class="case-block reveal">
+      <h2 class="case-h2">What I did, specifically</h2>
+      <ul class="contribution-list">
+        <li>Scanned 4 competitor sites and scored every facet against Popularity, Coverage, Utility, and UI Fit</li>
+        <li>Designed a minimal, mobile-friendly primary IA organized by region, roast, and processing</li>
+        <li>Designed an alternative flavor-first IA, renaming and restructuring facets around taste</li>
+        <li>Planned and ran a discount usability test with 3 participants across 2 findability tasks</li>
+        <li>Synthesized test results into a specific hierarchy issue and a recommendation for further testing</li>
+      </ul>
+    </section>
+
+    <!-- ===================== FOOTER NAV ===================== -->
+    <section class="case-nav reveal">
+      <a class="btn btn--solid" href="index.html#work">← All projects</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© <span id="year"></span> Chujun Cao</span>
+    <a href="index.html">Back to portfolio</a>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!reduce && 'IntersectionObserver' in window) {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); } });
+      }, { threshold: 0.1 });
+      document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+    } else {
+      document.querySelectorAll('.reveal').forEach((el) => el.classList.add('is-in'));
+    }
+  </script>
+</body>
+</html>

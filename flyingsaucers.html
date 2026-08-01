@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FlyingSaucers — Case Study · Chujun Cao</title>
+  <meta name="description" content="Case study: FlyingSaucers, an asynchronous cooking app for staying connected across distance." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%23E8744F'/%3E%3Ctext x='50' y='68' font-family='Georgia,serif' font-size='54' fill='white' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== 导航栏 ===================== -->
+  <header class="nav" id="top">
+    <a class="nav__logo" href="index.html">Chujun&nbsp;Cao</a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="index.html#work">Work</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===================== CASE STUDY HERO ===================== -->
+    <section class="case-hero reveal">
+      <a class="back-link" href="index.html#work">← Back to work</a>
+      <p class="eyebrow"><span class="dot" aria-hidden="true"></span>COOKING &amp; SOCIAL APP — STUDENT PROJECT (INF2191)</p>
+      <h1 class="case-hero__title">FlyingSaucers</h1>
+      <p class="case-hero__hook">Ashley cooks with her sister every Sunday. Her sister lives across the country.</p>
+      <div class="case-hero__meta">
+        <div><span class="meta-label">Team</span><p>Group research &amp; concept, individual continuation</p></div>
+        <div><span class="meta-label">My focus</span><p>Usability testing, iteration, visual direction</p></div>
+        <div><span class="meta-label">Timeline</span><p>2 course sprints</p></div>
+      </div>
+    </section>
+
+    <!-- ===================== OVERVIEW (problem / solution / role) ===================== -->
+    <section class="case-block reveal">
+      <div class="case-grid">
+        <div class="case-col">
+          <p class="case-kicker">PROBLEM</p>
+          <p>People who move away from family — across cities, provinces, or countries — lose
+          the small rituals that used to hold them together. Video calls during meals feel
+          forced and tiring to schedule. Recipe apps are built for cooking alone, not for
+          cooking <em>with</em> someone who isn't in the room.</p>
+        </div>
+        <div class="case-col">
+          <p class="case-kicker">SOLUTION</p>
+          <p>FlyingSaucers lets two people follow the same recipe on their own schedule —
+          same week, different times — then share photos and reactions afterward. No one
+          has to be online at the same time for it to feel shared.</p>
+        </div>
+        <div class="case-col">
+          <p class="case-kicker">MY ROLE</p>
+          <p>The research and concept (personas, task flows, testing plan) were built with my
+          group. I then continued the project individually: running usability testing,
+          synthesizing findings into concrete design changes, and finalizing the visual
+          direction.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== WHO IT'S FOR ===================== -->
+    <section class="case-block reveal">
+      <h2 class="case-h2">Who it's for</h2>
+      <div class="persona-row">
+        <div class="persona-card">
+          <p class="persona-name">Ashley <span>· 22, primary user</span></p>
+          <p>International student living alone in Toronto. Cooks 3–4 times a week, on an
+          irregular school schedule. Wants a low-pressure way to stay close to family.</p>
+        </div>
+        <div class="persona-card">
+          <p class="persona-name">Camila <span>· 27, secondary user</span></p>
+          <p>Ashley's sister, working full-time in Vancouver. Busy and often cooks after
+          work. Finds scheduled video calls feel like another obligation.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== KEY INSIGHTS ===================== -->
+    <section class="case-block reveal">
+      <h2 class="case-h2">What research told us</h2>
+      <ul class="insight-list">
+        <li><strong>Connection without a schedule.</strong> People don't want another video
+        call — they want to feel close without needing to be online at the same time.</li>
+        <li><strong>The ritual matters more than the tech.</strong> Recreating one specific
+        family recipe carried far more emotional weight than "cooking together" in general.</li>
+        <li><strong>Asynchronous still counts as shared.</strong> Comparing photos and
+        results after the fact was enough to make people feel like they'd done it together.</li>
+        <li><strong>Distance creates real friction.</strong> Some ingredients aren't
+        available in every city, so recipes needed to account for substitutions.</li>
+        <li><strong>Clarity affects trust in the ritual.</strong> During testing, unclear
+        icons and labels caused hesitation at exactly the moments meant to feel warm and easy.</li>
+      </ul>
+    </section>
+
+    <!-- ===================== ITERATION (before/after) ===================== -->
+    <section class="case-block reveal">
+      <h2 class="case-h2">Testing it, then fixing it</h2>
+      <p class="case-lead">
+        I ran moderated usability sessions with 2 participants over video call, plus a peer
+        design critique, then translated what surfaced into three concrete changes.
+      </p>
+
+      <div class="iteration-card">
+        <p class="iteration-issue">ISSUE 1 — An icon meant two different things</p>
+        <p>The same "+" icon was used to <em>save</em> a recipe on one screen and to
+        <em>select</em> a recipe on another. Participants weren't sure which action it
+        meant, and hesitated before tapping it.</p>
+        <p class="iteration-change"><strong>Change:</strong> Split into two distinct
+        controls — a bookmark icon for saving, and a labeled "Select Recipe" button for the
+        activity flow.</p>
+      </div>
+
+      <div class="iteration-card">
+        <p class="iteration-issue">ISSUE 2 — Filters applied one at a time</p>
+        <p>Selecting a single filter (e.g. difficulty) instantly updated the results, so
+        participants couldn't combine filters the way they expected to.</p>
+        <p class="iteration-change"><strong>Change:</strong> Redesigned filtering to allow
+        multiple selections before applying, with a clear "Apply" button to confirm.</p>
+      </div>
+
+      <div class="iteration-card">
+        <p class="iteration-issue">ISSUE 3 — Navigation didn't match expectations</p>
+        <p>The "Add" tab didn't say what it was for, and recipe cards looked clickable but
+        weren't — participants tapped them expecting a detail page.</p>
+        <p class="iteration-change"><strong>Change:</strong> Renamed "Add" to "Activity,"
+        and made recipe cards navigate to a full detail page on tap.</p>
+      </div>
+    </section>
+
+    <!-- ===================== VISUAL DIRECTION ===================== -->
+    <section class="case-block reveal">
+      <h2 class="case-h2">Finding the right tone</h2>
+      <p class="case-lead">I explored three visual directions before choosing one to refine.</p>
+      <div class="style-row">
+        <div class="style-card">
+          <div class="style-swatch" style="background:linear-gradient(135deg,#E4572E,#F3A35C,#FFF7EF)"></div>
+          <p class="style-name">Warm &amp; Social <span>— chosen</span></p>
+          <p>Soft, warm tones that felt inviting and comfortable for a social cooking
+          ritual — refined further to reduce visual competition between colors.</p>
+        </div>
+        <div class="style-card">
+          <div class="style-swatch" style="background:linear-gradient(135deg,#111111,#6B6B6B,#F5F5F5)"></div>
+          <p class="style-name">Clean &amp; Minimal</p>
+          <p>Clear and organized, but read as neutral — it lacked the warmth the social,
+          family-oriented concept needed.</p>
+        </div>
+        <div class="style-card">
+          <div class="style-swatch" style="background:linear-gradient(135deg,#FF6B6B,#FFD93D,#4ECDC4)"></div>
+          <p class="style-name">Playful &amp; Friendly</p>
+          <p>Energetic and eye-catching at first glance, but multiple strong colors made
+          it harder to keep a consistent visual hierarchy.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SCREENS ===================== -->
+    <section class="case-block reveal">
+      <h2 class="case-h2">Selected screens</h2>
+      <div class="case-phones">
+        <div class="phone"><img src="images/cook-1.png" alt="FlyingSaucers discover screen" onerror="this.closest('.phone').classList.add('phone--empty')" /><span class="phone__hint">cook-1.png</span></div>
+        <div class="phone"><img src="images/cook-2.png" alt="FlyingSaucers recipe detail" onerror="this.closest('.phone').classList.add('phone--empty')" /><span class="phone__hint">cook-2.png</span></div>
+        <div class="phone"><img src="images/cook-3.png" alt="FlyingSaucers activity invite" onerror="this.closest('.phone').classList.add('phone--empty')" /><span class="phone__hint">cook-3.png</span></div>
+      </div>
+    </section>
+
+    <!-- ===================== IMPACT ===================== -->
+    <section class="case-block reveal">
+      <h2 class="case-h2">Outcome</h2>
+      <p class="case-lead">
+        Both participants completed both test tasks — finding a recipe and inviting a
+        friend to cook it together. The friction that did surface was consistently about
+        interface clarity (icons and labels), which the iteration above addressed directly.
+        Participants responded well to the overall layout, especially how clearly cooking
+        time and difficulty were presented, which helped them decide quickly.
+      </p>
+    </section>
+
+    <!-- ===================== MY CONTRIBUTION ===================== -->
+    <section class="case-block reveal">
+      <h2 class="case-h2">What I did, specifically</h2>
+      <ul class="contribution-list">
+        <li>Planned and moderated 4 remote usability testing sessions, using a think-aloud protocol</li>
+        <li>Synthesized session notes and peer critique into 3 prioritized, actionable issues</li>
+        <li>Redesigned the affected interactions: save/select icons, filter behavior, and navigation labeling</li>
+        <li>Explored and evaluated 3 visual directions, then selected and refined the final style</li>
+      </ul>
+    </section>
+
+    <!-- ===================== FOOTER NAV ===================== -->
+    <section class="case-nav reveal">
+      <a class="btn btn--solid" href="index.html#work">← All projects</a>
+      <a class="btn btn--ghost" href="https://www.figma.com/design/oBxoYxvUvvwLej8vQc99DF" target="_blank" rel="noopener">View prototype in Figma</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© <span id="year"></span> Chujun Cao</span>
+    <a href="index.html">Back to portfolio</a>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!reduce && 'IntersectionObserver' in window) {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); } });
+      }, { threshold: 0.1 });
+      document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+    } else {
+      document.querySelectorAll('.reveal').forEach((el) => el.classList.add('is-in'));
+    }
+  </script>
+</body>
+</html>

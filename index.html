@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chujun Cao — UX/UI Designer</title>
+  <meta name="description" content="Chujun Cao — UX/UI designer. Master of Information (UX Design) at the University of Toronto. Mobile app design portfolio." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%23E8744F'/%3E%3Ctext x='50' y='68' font-family='Georgia,serif' font-size='54' fill='white' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E" />
+
+  <!-- 字体：Montserrat（标题）+ Poppins（正文），和你 Figma 里的设计一致 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== 导航栏 ===================== -->
+  <header class="nav" id="top">
+    <a class="nav__logo" href="#top">Chujun&nbsp;Cao</a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===================== HERO 首屏 ===================== -->
+    <section class="hero reveal">
+      <p class="eyebrow"><span class="dot" aria-hidden="true"></span>UX / UI DESIGNER — TORONTO</p>
+      <!-- 想改大标题就改这里 -->
+      <h1 class="hero__title">Designing for connection, by removing what gets in the way.</h1>
+      <p class="hero__sub">
+        I'm Chujun — a Master of Information (UX&nbsp;Design) student at the University of
+        Toronto, focused on user research, information architecture, and interface design
+        for mobile apps.
+      </p>
+      <div class="hero__cta">
+        <a class="btn btn--solid" href="#work">View my work</a>
+        <a class="btn btn--ghost" href="#contact">Get in touch</a>
+      </div>
+    </section>
+
+    <!-- ===================== 精选作品 ===================== -->
+    <section class="work" id="work">
+      <div class="section-head reveal">
+        <p class="eyebrow eyebrow--red"><span class="dot" aria-hidden="true"></span>SELECTED WORK</p>
+        <h2 class="section-title">Three projects,<br />three different problems.</h2>
+      </div>
+
+      <!-- ---------- 项目 1：活动 App ---------- -->
+      <article class="project reveal">
+        <!-- 预览区：把你的截图放进 images 文件夹，命名 eventjoy-1.png / eventjoy-2.png / eventjoy-3.png 即可自动显示 -->
+        <div class="project__preview project__preview--peach">
+          <div class="phones">
+            <div class="phone"><img src="images/eventjoy-1.png" alt="EventJoy home screen" onerror="this.closest('.phone').classList.add('phone--empty')" /><span class="phone__hint">eventjoy-1.png</span></div>
+            <div class="phone phone--lift"><img src="images/eventjoy-2.png" alt="EventJoy event detail" onerror="this.closest('.phone').classList.add('phone--empty')" /><span class="phone__hint">eventjoy-2.png</span></div>
+            <div class="phone"><img src="images/eventjoy-3.png" alt="EventJoy booking confirmation" onerror="this.closest('.phone').classList.add('phone--empty')" /><span class="phone__hint">eventjoy-3.png</span></div>
+          </div>
+        </div>
+
+        <div class="project__info">
+          <p class="project__label">EVENT &amp; SOCIAL APP</p>
+          <h3 class="project__title">EventJoy — local events for newcomers</h3>
+          <p class="project__desc">
+            A mobile app that helps newly-landed international students find local events
+            they can actually trust — clear organizer info, honest event details, and a
+            sense of who else is going, so attending alone feels less intimidating.
+          </p>
+          <div class="project__role">
+            <span class="role-label">MY ROLE</span>
+            <p>Full team project across research, prototyping, and testing. I authored the background research individually, ran part of the interviews and usability testing, and built the final high-fidelity mockup on my own.</p>
+          </div>
+          <ul class="tags">
+            <li>Competitive Research</li><li>Usability Testing</li><li>Prototyping</li><li>UI Design</li>
+          </ul>
+          <a class="project__link" href="eventjoy.html">View case study →</a>
+        </div>
+      </article>
+
+      <!-- ---------- 项目 2：烹饪 App ---------- -->
+      <article class="project project--reverse reveal">
+        <div class="project__preview project__preview--sand">
+          <div class="phones">
+            <div class="phone"><img src="images/cook-1.png" alt="FlyingSaucers discover screen" onerror="this.closest('.phone').classList.add('phone--empty')" /><span class="phone__hint">cook-1.png</span></div>
+            <div class="phone phone--lift"><img src="images/cook-2.png" alt="FlyingSaucers recipe detail" onerror="this.closest('.phone').classList.add('phone--empty')" /><span class="phone__hint">cook-2.png</span></div>
+            <div class="phone"><img src="images/cook-3.png" alt="FlyingSaucers activity invite" onerror="this.closest('.phone').classList.add('phone--empty')" /><span class="phone__hint">cook-3.png</span></div>
+          </div>
+        </div>
+
+        <div class="project__info">
+          <p class="project__label">COOKING &amp; SOCIAL APP</p>
+          <h3 class="project__title">FlyingSaucers — cooking rituals across the distance</h3>
+          <p class="project__desc">
+            An app for people who used to cook with someone they love and now live too far
+            apart to do it in person. Friends or family follow the same recipe on their own
+            schedule, then share photos and reactions — no video call required.
+          </p>
+          <div class="project__role">
+            <span class="role-label">MY ROLE</span>
+            <p>Group project (research &amp; concept) → individual continuation. I led usability testing, synthesized findings into design changes, and finalized the visual direction.</p>
+          </div>
+          <ul class="tags">
+            <li>Usability Testing</li><li>Iteration</li><li>UI Design</li><li>Visual Direction</li>
+          </ul>
+          <a class="project__link" href="flyingsaucers.html">View case study →</a>
+        </div>
+      </article>
+
+      <!-- ---------- 项目 3：信息架构 ---------- -->
+      <article class="project reveal">
+        <div class="project__preview project__preview--peach project__preview--center">
+          <div class="facet-preview">
+            <div class="facet-preview__group">
+              <span class="facet-chip">Region</span><span class="facet-chip">Roast</span><span class="facet-chip">Process</span><span class="facet-chip">Price</span>
+            </div>
+            <div class="facet-preview__arrow">vs</div>
+            <div class="facet-preview__group">
+              <span class="facet-chip facet-chip--alt">Flavor Vibes</span><span class="facet-chip facet-chip--alt">Roast</span><span class="facet-chip facet-chip--alt">Process</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project__info">
+          <p class="project__label">INFORMATION ARCHITECTURE</p>
+          <h3 class="project__title">The Well-Faceted Coffee Shop</h3>
+          <p class="project__desc">
+            A coffee retailer's storefront came with every possible filter — cultivar,
+            altitude, acidity, two brewing fields. Technically complete, practically
+            unusable. I cut it down to what people actually use, then designed two
+            different ways to browse the same catalog.
+          </p>
+          <div class="project__role">
+            <span class="role-label">MY ROLE</span>
+            <p>Individual project. Competitive research, both IA structures, and a discount usability test are all my own work.</p>
+          </div>
+          <ul class="tags">
+            <li>Information Architecture</li><li>Competitive Research</li><li>Usability Testing</li>
+          </ul>
+          <a class="project__link" href="coffee-ia.html">View case study →</a>
+        </div>
+      </article>
+    </section>
+
+    <!-- ===================== 关于 ===================== -->
+    <section class="about reveal" id="about">
+      <div class="about__grid">
+        <div>
+          <p class="eyebrow eyebrow--red"><span class="dot" aria-hidden="true"></span>ABOUT</p>
+          <h2 class="section-title">Research first,<br />then pixels.</h2>
+          <!-- 职业照：把照片改名为 profile.jpg 放进 images 文件夹即可自动显示 -->
+          <div class="about__photo">
+            <img src="images/profile.png" alt="Chujun Cao" onerror="this.closest('.about__photo').classList.add('about__photo--empty')" />
+            <span class="about__photo-hint">profile.jpg</span>
+          </div>
+        </div>
+        <div class="about__body">
+          <p class="about-hook">Curiosity got me into UX. Empathy keeps me here.</p>
+          <p>
+            A class project once asked me to design a platform connecting people without a
+            car to on-demand couriers. We only got as far as research — but I couldn't stop
+            imagining what it would feel like to actually use it.
+          </p>
+          <p>
+            My HR background sharpened that empathy. Media Studies showed me how the same
+            environment can mean very different things to different people. Both are why I
+            design research-first, for people mainstream apps often overlook — and why I
+            keep returning to tools for connection, at a time when meeting in person has
+            gotten harder.
+          </p>
+          <dl class="facts">
+            <div><dt>Program</dt><dd>MI, UX Design — University of Toronto</dd></div>
+            <div><dt>Undergrad</dt><dd>Book &amp; Media Studies, IR &amp; HR</dd></div>
+            <div><dt>Focus</dt><dd>Mobile UX/UI, user research, IA</dd></div>
+            <div><dt>Based in</dt><dd>Toronto, Canada</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 联系 ===================== -->
+    <section class="contact reveal" id="contact">
+      <p class="eyebrow eyebrow--light"><span class="dot dot--light" aria-hidden="true"></span>GET IN TOUCH</p>
+      <h2 class="contact__title">Let's build something<br />worth using.</h2>
+      <a class="contact__mail" href="mailto:chujun.cao@mail.utoronto.ca">chujun.cao@mail.utoronto.ca</a>
+      <p class="contact__note">Open to UX design internships, new-grad roles, and graduate program conversations.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© <span id="year"></span> Chujun Cao</span>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <script>
+    // 页脚年份自动更新
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // 滚动到视口时淡入（尊重"减少动画"系统设置）
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!reduce && 'IntersectionObserver' in window) {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); } });
+      }, { threshold: 0.12 });
+      document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+    } else {
+      document.querySelectorAll('.reveal').forEach((el) => el.classList.add('is-in'));
+    }
+  </script>
+</body>
+</html>
